@@ -1,0 +1,14 @@
+/src
+/e2e
+/node_modules
+/platforms
+/plugins
+.browserslistrc
+.editorconfig
+.eslintrc.json
+angular.json
+ionic.config.json
+karma.conf.js
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
