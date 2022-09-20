@@ -82,6 +82,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
+		<preference name="StatusBarStyle" value="default" />
         <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
             <string>Send Geolocated notifications</string>
         </edit-config>
