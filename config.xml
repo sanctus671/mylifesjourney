@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1" id="co.nz.mylifesjourney.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="3" id="co.nz.mylifesjourney.app" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>My Life's Journey</name>
     <description>Record and reflect the moments that weave together the story of your life.</description>
     <author email="robers@xtra.co.nz" href="https://alzheimers.org.nz/">Alzheimers New Zealand</author>
@@ -50,7 +50,7 @@
         <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_foreground.png" target="app/src/main/res/mipmap-xxxhdpi-v4/launcher_foreground.png" />
         <resource-file src="resources/android/styles.xml" target="app/src/main/res/values/styles.xml" />
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:label='@string/activity_name']">
-            <activity android:theme="@style/mljTheme" android:exported="true" />
+            <activity android:exported="true" android:theme="@style/mljTheme" />
         </edit-config>
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:icon="@mipmap/launcher" android:roundIcon="@mipmap/launcher_round" />
@@ -82,7 +82,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
-		<preference name="StatusBarStyle" value="default" />
+        <preference name="StatusBarStyle" value="default" />
         <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
             <string>Send Geolocated notifications</string>
         </edit-config>
